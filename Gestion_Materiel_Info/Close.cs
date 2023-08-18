@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace Gestion_Materiel_Info
 {
-    public partial class Form1 : Form
+    public partial class Close : Form
     {
-        public Form1()
+        public Close()
         {
             InitializeComponent();
+        }
+
+        private void non_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void oui_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
